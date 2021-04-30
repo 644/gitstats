@@ -53,9 +53,9 @@ jobs:
       env:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        EXCLUDED: 644/nessusparser,644/gitstats
+        EXCLUDED: ${{ secrets.EXCLUDED }}
         EXCLUDED_LANGS: ${{ secrets.EXCLUDED_LANGS }}
-        EXCLUDE_FORKED_REPOS: false
+        EXCLUDE_FORKED_REPOS: true
 
     # Commits all changed files to the repository
     - name: Commit to the repo
