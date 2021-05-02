@@ -5,7 +5,7 @@ name: Generate Stats Images
 # Controls when the action will run. Triggers the workflow on push events
 on:
   schedule:
-    - cron: '12 * * * *'
+    - cron: '12 0 * * *'
   push:
     branches: [ master ]
   workflow_dispatch:
